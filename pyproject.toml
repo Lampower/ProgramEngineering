@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "programengineering"
+version = "0.1.0"
+description = ""
+authors = ["Lampower <123113309+Lampower@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.14.3"
+fastapi = "^0.136.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
