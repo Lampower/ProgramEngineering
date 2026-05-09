@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from schemas.user import TokenDTO, UserCreateDTO, UserDTO
+from schemas.user import EditUserDTO, TokenDTO, UserCreateDTO, UserDTO
 
 
 router = APIRouter(prefix="/users", tags=["users"])
@@ -15,4 +15,13 @@ async def login_user(body: UserCreateDTO) -> TokenDTO:
 
 @router.get("/me")
 async def get_me() -> UserDTO:
+    pass
+
+@router.put("/edit")
+async def edit(bodt: EditUserDTO) -> UserDTO:
+    pass
+
+# если все равно можно без рефреша сделать, по факту просто безопасность теряем
+@router.get("/refresh")
+async def refresh_token() -> TokenDTO:
     pass

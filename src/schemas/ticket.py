@@ -7,4 +7,4 @@ class TicketDTO(BaseModel):
     title: str
     description: str
     status: str
-    
+
